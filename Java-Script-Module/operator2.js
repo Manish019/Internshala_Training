@@ -23,7 +23,7 @@ let y = 20;
 console.log("Modules of X ->", x) ;
 
 
-//concatinate into string and arthematic operators
+//concatenate into string and arthematic operators
 
 let firstName = "Manish";
 let lastName = "Aryan";
@@ -42,6 +42,7 @@ const results = age + string;
 
 console.log("my age is => ", results);
 
+console.log("2" - 2);
 
 
 
