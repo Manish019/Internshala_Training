@@ -10,7 +10,7 @@ let age = 18;
 
 const adult = age <= 18; // greater than operator
 
-// console.log("adult", adult);
+ console.log("adult", adult);
 
 let x = 10;
 let y = 30;
@@ -38,3 +38,17 @@ let num4 = 50;
 console.log(num3 != num4); // true only comapre values  or  // they are equal values false
 console.log(num3 !== num4);   // here comapre values or types  false or true ==> true
 
+
+
+
+
+function isInt(num){
+  return num % 1 == 0;
+  }
+  console.log(isInt(4));
+  console.log(isInt(12.3));
+  console.log(isInt(0.5));
+  
+
+
+  
