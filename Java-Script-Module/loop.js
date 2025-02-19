@@ -25,6 +25,18 @@ for(a=1; a<=100; a++){
   console.log(a);
 }
 
+
+// exapmles
+
+let b, c = '';
+for (b = 0; b <= 5; b++) {
+  c += b;
+
+  console.log(b);
+}
+
+
+
 // to print the car name
 
 const car = ['BMW', 'Volvo', 'Maruti', 'Dsizer'];
