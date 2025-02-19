@@ -1,4 +1,9 @@
 
+//A variable is a container for storing data values in programming.
+//  It allows you to store, modify, and reuse data throughout your code. 
+// Variables can hold different types of values, such as numbers, strings, arrays, or objects, depending on the programming language.
+
+
 let x= 20;
 
 //const x = 20  can not redecelered  in same variable name

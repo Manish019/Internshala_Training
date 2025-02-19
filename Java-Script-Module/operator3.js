@@ -10,7 +10,7 @@ let age = 18;
 
 const adult = age <= 18; // greater than operator
 
- console.log("adult", adult);
+ console.log("adult", adult); //  output true
 
 let x = 10;
 let y = 30;
@@ -24,9 +24,10 @@ const isXlessThanY = x >= y ; // less than operator
 
 let num1 = "30";
 let num2 = 30;
-// console.log(num1 == num2); //only compare values
 
-// console.log(num1 === num2); // compare values and types of variable
+console.log(num1 == num2);    //only comapare values
+
+console.log(num1 === num2); // compare values and types of variable
 
 
 

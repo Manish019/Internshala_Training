@@ -29,7 +29,7 @@ let firstName = "Manish";
 let lastName = "Aryan";
 
 firstName+=lastName;
-console.log("My full name is", firstName);
+console.log("My full name is", firstName); // out put ManishAryan
 
 // perform addition on  string and number
 
@@ -42,7 +42,11 @@ const results = age + string;
 
 console.log("my age is => ", results);
 
+// out put 20 is my age
+
 console.log("2" - 2);
+
+//out put string 2 and numbeer 2 always subtract number 2-2= 0
 
 
 
