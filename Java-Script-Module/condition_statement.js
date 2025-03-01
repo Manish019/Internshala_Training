@@ -15,13 +15,29 @@ else{
   console.log("Number is Negative");
 }
 
+//
+
+let age = 18;
+
+if (age < 18 ){
+  console.log("you can not")
+}
+else if (age < 25 ){
+
+  console.log("go to the club");
+}
+else (age < 25){
+  console.log("drink anything");
+}
+
+
 
 // questions To print Grade of students , marks > 90 ----> grade 'A'
 // marks > 80 and marks <=90 ----> grade 'B'
 // marks > 70 and marks <=80 -----> grade 'C'
 //  and below this -----> Fail
 
-let marks = 85;
+let marks = 85; 
 let grade;
 
 if (marks > 90){

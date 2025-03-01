@@ -22,3 +22,7 @@ console.log(c);
 
 //  We cn only access the value  till the value is given 
 // We can not access value of let and const before they are initialize
+
+//Variables defined with let and const are hoisted to the top of the block, but not initialized.
+
+
