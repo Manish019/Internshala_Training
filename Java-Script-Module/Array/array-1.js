@@ -3,6 +3,8 @@
 // let name = ["Manish" , "Ram" , "Sita"];
 // let car = ["Bus", "Volvo", "BMW"]
 
+const car = ["Bus", "Volvo", "BMW"]
+
 // console.log("Name of Arrya is =>", name);
 // console.log(typeof("Name of Arrya is =>", name));
 // console.log("Car of Arrya is =>", car);
@@ -17,6 +19,7 @@
 // Array Literal
 
 const fruits = ["Mango", "Banana", "Guava", "Grapes"];
+// to check
 
 fruits[0]= "Litchi"  // Litchi to replace Mango
 
