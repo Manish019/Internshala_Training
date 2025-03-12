@@ -72,4 +72,8 @@ const students = [
 
 
 
+// Write a function that takes an array of numbers, doubles each value, 
+// and then filters out the values greater than 10.
+
+
 

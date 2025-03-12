@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creating and Removing HTML Elements
+  </title>
+</head>
+<body>
+  <h1>Creating and Removing HTML Elements
+  </h1>
+    <div id="parent">
+<p id="existingPara">The Parameter object represents an HTML <param> element.
+</p>    
+
+
+<h3>To Insert New paragrap Before Existing Paragraph</h3>   
+ 
+    </div>
+<script>
+   const newPara = document.createElement("p");
+   newPara.innerHTML = "New paragraph is Added";
+   const parent =   document.getElementById("parent");
+    // parent.appendChild(newPara); // it means new paragraph is add to the parent of child
+    // suppose i want to add new para graph before the para graph than
+    
+
+     const existingPara = document.getElementById("existingPara");
+     parent.insertBefore(newPara, existingPara);
+
+
+
+
+
+</script>
+     
+  </body>
+</html>

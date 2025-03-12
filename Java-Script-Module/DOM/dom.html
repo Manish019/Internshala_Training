@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+</head>
+<body>
+  <div id="root">
+<h1>Document Object Module</h1>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, est! In ut odit possimus, magnam nisi quibusdam tenetur esse suscipit ab, dolores voluptates aspernatur dolorum nostrum repudiandae recusandae ipsa tempora?</p>
+<p class="header">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+<h2 class="header">New Document object MOdule</h2>
+<h3 class="header">Style  in  Dome</h3>
+</div>
+
+  <script>
+    // root element
+  const rootNode = document.getElementById("root");  // method  ====> document.getelementByID
+    console.log(rootNode);
+    // para graph tag 
+    const paragraphs = document.getElementsByTagName("p");
+    console.log(paragraphs);
+
+    // header class
+    const headerClassElement = document.getElementsByClassName("header"); // single header class uses
+    console.log(headerClassElement);
+
+    //const element = document.querySelector(".header"); // first Match
+    const element = document.querySelectorAll(".header"); // all pages
+    console.log(element);
+
+  </script>
+</body>
+</html>
+
+
+<!-- How we can fecth java script, node -->

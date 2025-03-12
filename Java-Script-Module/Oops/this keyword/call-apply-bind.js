@@ -2,49 +2,49 @@
 
 // // call() method we  can write a method that can be used on different objects.
 
-// const users = {
-//   firstName: " Manish",
-//   lastName: "Kumar",
+const users = {
+  firstName: " Manish",
+  lastName: "Kumar",
+};
+
+let printfullName = function (hobby , item) { // parameters
+  console.log(
+    `My name is ${this.firstName}  ${this.lastName} and My hobby is ${hobby}`
+  );
+  console.log(
+    `My favorite movie is ${item}`
+  );
+};
+printfullName.call(users, "Cricket" , "Jan"); // arguments
+
+// now we have another user
+
+const user1 = {
+  firstName: "Ram",
+  lastName: "Gupta",
+};
+
+printfullName.call(user1, "Music", "Karz"); // arguments
+
+/// const students
+
+// const students = {
+//   name: "Manish Kumar",
+//   rollNo: 25,
+//   class: "Tenth",
 // };
-
-// let printfullName = function (hobby , item) { // parameters
-//   console.log(
-//     `My name is ${this.firstName}  ${this.lastName} and My hobby is ${hobby}`
-//   );
-//   console.log(
-//     `My favorite movie is ${item}`
-//   );
+// let printStudent = function () {
+//   console.log(`My Name is ${this.name}`);
+//   console.log(`My Roll No is ${this.rollNo}`);
+//   console.log(`My Class  is ${this.class}`);
 // };
-// printfullName.call(users, "Cricket" , "Jan"); // arguments
+// printStudent.call(students);
 
-// // now we have another user
-
-// const user1 = {
-//   firstName: "Ram",
-//   lastName: "Gupta",
+// const newStudents = {
+//   name: "Rajesh Kumar",
+//   rollNo: 45,
+//   class: "nineth",
 // };
-
-// printfullName.call(user1, "Music", "Karz"); // arguments
-
-// /// const students
-
-// // const students = {
-// //   name: "Manish Kumar",
-// //   rollNo: 25,
-// //   class: "Tenth",
-// // };
-// // let printStudent = function () {
-// //   console.log(`My Name is ${this.name}`);
-// //   console.log(`My Roll No is ${this.rollNo}`);
-// //   console.log(`My Class  is ${this.class}`);
-// // };
-// // printStudent.call(students);
-
-// // const newStudents = {
-// //   name: "Rajesh Kumar",
-// //   rollNo: 45,
-// //   class: "nineth",
-// // };
 
 // // printStudent.call(newStudents); 
 

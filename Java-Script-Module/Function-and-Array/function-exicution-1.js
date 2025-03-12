@@ -118,6 +118,20 @@ function first(){
 }
 
 
+var a = "Hello";
+
+first();
+function first(){
+  var b = "Hi";
+  second();
+  function second(){
+    var c =  "world";
+    console.log(a+b+c);
+  }
+}
+
+
+
 
 
 

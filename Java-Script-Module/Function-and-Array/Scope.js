@@ -70,6 +70,5 @@ function bar(){
 }
 bar();
 }
-
 var a = 35;
 foo();

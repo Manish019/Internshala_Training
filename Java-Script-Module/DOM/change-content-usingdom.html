@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>change content using dom</title>
+  </head>
+  <body>
+    <div id="root">
+      <h1>Change The Content Useing DOM</h1>
+      <!-- we can using a properties in js inner html -->
+      <h2 id="newtext">Dom Manupulation</h2>
+      <!-- end -->
+
+      <p class="paratext">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, est! In
+        ut odit possimus, magnam nisi quibusdam tenetur esse suscipit ab,
+        dolores voluptates aspernatur dolorum nostrum repudiandae recusandae
+        ipsa tempora?
+      </p>
+      <p class="header">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <h2 class="header">New Document object MOdule</h2>
+      <h3 class="header">Style in Dome</h3>
+
+      <img src="img/car.jpeg" alt="car" />
+      <br />
+      <h2>
+        This example changes the value of the src attribute of an
+        <img /> element:
+      </h2>
+
+      <img id="myImg" src="img/car.jpeg" alt="developer" />
+
+      <h1>You can put dynamic Paragraph also</h1>
+      <p id="idpara"></p>
+      <!-- using class -->
+       <p class="classpara"></p>
+    </div>
+
+    <script>
+      // root element
+      const rootNode = document.getElementById("root"); // method  ====> document.getelementByID
+      console.log(rootNode);
+      // para graph tag
+      const paragraphs = document.getElementsByTagName("p");
+      console.log(paragraphs);
+
+      // header class
+      const headerClassElement = document.getElementsByClassName("header"); // single header class uses
+      console.log(headerClassElement);
+
+      //const element = document.querySelector(".header"); // first Match
+      const element = document.querySelectorAll(".header"); // all pages
+      console.log(element);
+      // using a property inner.html to change the heading text anad repalce it
+
+      const header = document.querySelector("#newtext");
+      header.innerHTML = "Changing HTML Content";
+
+      // change paragraph also Paragraph
+      const paragraph = document.querySelector(".paratext");
+      paragraph.innerHTML ="The easiest way to modify the content of an HTML element is by using the innerHTML property";
+
+      // to update the new image of car to  developer
+      document.getElementById("myImg").src = "img/developer.jpeg";
+
+      // to put paragraph using id
+      document.getElementById("idpara").innerHTML ="JavaScript can create dynamic HTML content.";
+
+      // put paragraph using class
+      const newadd = document.querySelector(".classpara");
+      newadd.innerHTML = "Never use document.write() after the document is loaded. It will overwrite the document.";
+    </script>
+  </body>
+</html>

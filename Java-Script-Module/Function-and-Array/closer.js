@@ -19,20 +19,20 @@
 
 
 
-function sum(){
-  var a = 10;
+// function sum(){
+//   var a = 10;
 
-  function num(){
-    console.log(a);
-  }
+//   function num(){
+//     console.log(a);
+//   }
 
-return num;
-}
+// return num;
+// }
 
 
-const store = sum();  
-console.log(store);  // function : num
-store();  // 10
+// const store = sum();  
+// console.log(store);  // function : num
+// store();  // 10
 
 
 
@@ -56,3 +56,18 @@ store();  // 10
 
 // const store = sum(5);
 // console.log(store(10));
+
+
+
+var a = "Hello";
+
+first();
+function first(){
+  var b = "Hi";
+  console.log(a);
+  second();
+  function second(){
+    var c =  "world";
+    console.log(c + b);
+  }
+}
