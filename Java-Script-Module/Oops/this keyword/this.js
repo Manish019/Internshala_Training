@@ -11,8 +11,8 @@
 
 //In function , this keywords point to global object
 // function manish (){
-//   console.log("Manish");
-//   // console.log(this); // global object
+//  console.log("Manish");
+//  console.log(this); // global object
 
 // }
 

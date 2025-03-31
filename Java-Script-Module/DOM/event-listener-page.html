@@ -1,0 +1,51 @@
+
+<!-- Add an event listener that fires when a user clicks a button: -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Listener Page</title>
+</head>
+<body>
+  <div id ="root">
+<h1>DOM Event Listener</h1>
+<p> Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+
+<button>Reset Button</button>
+  </div>
+
+  <script>
+      document.querySelector("p").addEventListener("click", function(){
+        this.style.color = "red"; // `this` refers to the clicked paragraph
+    });
+
+    // to change the paragraph
+
+  function mouseOverFunction(event){
+  event.target.innerHTML = "Change the text of this para graph"; 
+ }
+let paragraph = document.querySelector("p");
+// Attach mouseover event
+paragraph.addEventListener("mouseover", mouseOverFunction);
+// reset button
+document.querySelector("button").addEventListener("click", function(){
+  paragraph.removeEventListener("mouseover", mouseOverFunction);
+})
+
+
+// windows
+
+window.addEventListener("resize", setText); // after resizing button  text will be change it
+function setText(){
+  document.querySelector("button").innerHTML = "Window";
+}
+
+  </script>
+
+
+</body>
+</html>

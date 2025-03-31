@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+ <h1>Call Back Hell</h1> 
+
+
+ <script>
+  
+function step1(callback){
+  console.log("Please wait the login ........");
+
+  setTimeout(() => {
+    console.log("Login completed in 2 seconds!");
+    callback("profile.png"); 
+
+  }, 2000);
+  
+}
+
+function step2(image , callback){
+  console.log(`Please wait, uploading ${image}...`);
+  setTimeout(() => {
+    console.log("Image uploaded in 5 seconds!");
+
+      callback(200);
+  }, 5000 )
+}
+
+function step3( price , callback){
+  console.log(`Please wait, setting price & discount: $${price}...`);
+  setTimeout(() => {
+    console.log ("Price & discount set in 3 seconds!");
+    callback("OrderForm1235"); 
+  }, 3000 )
+}
+function step4(form , callback){
+  console.log(`Please wait, submitting the form: ${form}...`);
+  setTimeout(() => {
+    console.log
+    ("Form submitted in 4 seconds!");
+
+    callback("OrderList400"); 
+  }, 4000 )
+}
+
+function step5(list , callback){
+  console.log(`Please wait, checking the list: ${list}...`);
+  setTimeout(() => {
+    console.log
+    ("List checked in 6 seconds!");
+    callback(); 
+  }, 6000);
+}
+step1((image) => {
+  step2(image, (price) => {
+    step3(price, (form) => {
+      step4(form, (list) => {
+        step5(list, () => {
+          console.log("All steps completed successfully!");
+        });
+      });
+    });
+  });
+});
+
+
+ </script>
+</body>
+</html>

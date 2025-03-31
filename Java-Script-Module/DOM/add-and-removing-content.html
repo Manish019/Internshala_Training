@@ -14,8 +14,11 @@
 </p>    
 
 
-<h3>To Insert New paragrap Before Existing Paragraph</h3>   
- 
+<h3 id="headtext">To Insert New paragrap Before Existing Paragraph 1</h3>   
+<h3 id="headtext">To Insert New paragrap Before Existing Paragraph 2</h3>   
+<h3 id="headtext">To Insert New paragrap Before Existing Paragraph 3</h3>   
+<h3 id="headtext">To Insert New paragrap Before Existing Paragraph4</h3>   
+
     </div>
 <script>
    const newPara = document.createElement("p");
@@ -28,9 +31,8 @@
      const existingPara = document.getElementById("existingPara");
      parent.insertBefore(newPara, existingPara);
 
-
-
-
+// remove the heading  all headting
+const multipleremove = document.querySelectorAll("#headtext").forEach(heading => heading.remove());
 
 </script>
      

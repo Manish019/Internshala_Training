@@ -1,0 +1,65 @@
+<!-- Event bubbling is a mechanism in JavaScript where an 
+ event triggered on a child element propagates (bubbles up) 
+ to its parent elements in the DOM tree. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Bubbling and Capturing
+  </title>
+  <style>
+#div1{
+  background-color: rgb(33, 147, 247);
+  width: 450px;
+  height: 400px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+ #inner{
+  width: 300px;
+  height: auto;
+  border: 1px solid red;
+  margin: 20px;
+  padding: 20px;
+ }
+#div2{
+  background-color: rgb(182, 186, 189);
+  width: 350px;
+  height: auto;
+  border: 1px solid black;
+}
+
+
+  </style>
+</head>
+<body>
+  <div id="div1">
+    <div id="inner">
+    <h1>Event Bubbling
+    </h1>
+    <p>Event bubbling is a mechanism in JavaScript where an event triggered on a child element propagates (bubbles up) to its parent elements in the DOM tree.</p>
+  </div>
+</div>
+
+  <div id="div2">
+    <h1>Event Capturing
+    </h1>
+  </div>
+
+<script>
+  document.getElementById("div1").addEventListener("click", function(){
+     alert("Outer function is click !!");
+     this.style.color = "red";
+      });
+
+  document.getElementById("inner").addEventListener("click", function(){
+     alert("inner function is click !!");
+  })
+</script>
+
+
+</body>
+</html>

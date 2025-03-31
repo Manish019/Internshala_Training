@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript DOM Events</title>
+</head>
+<body>
+  
+<div id="root">
+  <h1>JavaScript DOM Events</h1>
+
+  <P>A JavaScript can be executed when an event occurs, like when a user clicks on an HTML element.
+  </P>
+  <button onclick="changeBackgroundColor()">clicks On</button>
+<br><br>
+
+<h2>Hover Effect change Text when a cursor move</h2>
+<div id ="changeHeadings" style="width: 200px; height: 100px; border: 1px solid black;">
+  <h2>Welcome Back</h2>
+</div>
+
+<br><br>
+<h2>Chnage upper case of all text</h2>
+<input type="text" onchange="upperCase()" placeholder="Enter Here !">
+</div>
+
+<script>
+  function changeBackgroundColor (){
+    document.querySelector("body").style.backgroundColor = "red";
+  }
+
+  // change the text using hover 
+  document.getElementById("changeHeadings").onmouseover = changeText;
+  document.getElementById("changeHeadings").onmouseout = revertText;
+
+  // document.getElementById("changeHoverText").onmouseout =
+
+
+function changeText(){
+  document.getElementById("changeHeadings").innerHTML = "<h2>Thank You!! </h2>";
+  document.getElementById("changeHeadings").style.color = "red"; // Change text color to red
+}
+function revertText(){
+  document.getElementById("changeHeadings").innerHTML = "<h2>Welcome Back</h2>";
+  document.getElementById("changeHeadings").style.color = "Blue"; // Change text color to red
+}
+
+
+function upperCase(){
+  const input = document.querySelector("input");
+  input.value = input.value.toUpperCase();
+}
+
+</script>
+
+
+</body>
+</html>
